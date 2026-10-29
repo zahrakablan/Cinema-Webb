@@ -1,0 +1,989 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   background-image:url(../img/NzAKpm.jpg);
+    color: yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    perspective: 700px;
+}
+.header1{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(8, 8, 80, 0.683);
+    display: flex;
+}   
+header ul {
+    list-style: none;
+}
+header li{
+    display: inline-block;
+    padding-top: 14px;
+}
+header a{
+    text-decoration: none;
+    color: yellow;
+    text-transform: capitalize;
+}
+.nav1{
+   flex-grow:10;
+   padding-left: 100px;
+}
+.nav1 li{
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.nav1 li::after{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+     transition: 1s;
+}
+.nav1 li:hover::after{
+    height: 100%;
+}
+.nav1 li::before{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    top: 0;
+    right: 0;
+    background-color: red;
+    transition: 1s;
+}
+.nav1 li:hover::before{
+    height: 100%;
+}
+.nav2{
+    flex-grow:1;
+}
+.nav2 li{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.nav2 li::after{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+     transition: 1s;
+}
+.nav2 li:hover::after{
+    height: 100%;
+}
+.nav2 li::before{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    top: 0;
+    right: 0;
+    background-color: red;
+     transition: 1s;
+}
+.nav2 li:hover::before{
+    height: 100%;
+}
+.nav2 a{
+    text-transform: capitalize;
+}
+.icons1{
+     flex-grow:3 ;
+}
+.icons1-div{
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.icons1-div i{
+   padding-top: 15px;
+}
+.icons1-div::after{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+     transition: 1s;
+}
+.icons1-div:hover::after{
+    height: 100%;
+}
+.icons1-div::before{
+    content: "";
+    position: absolute;
+    width:2%;
+    height:0% ;
+    top: 0;
+    right: 0;
+    background-color: red;
+     transition: 1s;
+}
+.icons1-div:hover::before{
+    height: 100%;
+}
+.icons1 i:hover{
+    color: red;
+    transform: rotatey(180deg);
+}
+.header2 {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(17, 17, 109, 0.683);
+    padding-top: 15px;
+    display: flex;
+}
+.name-of-website{
+   flex-grow:10 ;
+   padding-left: 120px;
+}
+.name-of-website i{
+    font-size: 25px;
+}
+.name-of-website h1 {
+    display: inline;
+}
+.nav3 {
+    flex-grow: 10;
+}
+.nav3 .li{
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.nav3 .li::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.nav3 .li::before{
+    content: "";
+    position: absolute;
+   top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.nav3 .li:hover::before{
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.nav3 .li:hover::after{
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.nav3 a{
+    text-transform: capitalize;
+}
+.nav3 a:hover{
+    color: red;
+}
+.parent-for-dropdowm{
+    position: relative;
+}
+.dropdowm-ul{
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 1px;
+    width: 250px;
+    height: 150px;
+   background-color:  rgb(8, 8, 80);
+   transform: scale(0,0);
+   transition: transform 1s;
+}
+.dropdowm-ul li{
+    margin-top: 10px;
+    width: 80px;
+}
+.dropdowm-lii{
+ transform: translatey(-10px);
+}
+.parent-for-dropdowm:hover .dropdowm-ul {
+    transform: scale(1,1);
+    transition: 1s;
+}
+.icons2{
+    flex-grow: 10;
+    padding-top: 14px;
+    margin-left: -180px;
+    position: relative;
+}
+.icons2 div{
+   position:absolute ;
+}
+.icons2-div1{
+    margin-left: 20px;
+}
+.icons2-div2{
+    margin-left: 60px;
+}
+.icons2-div3{
+    margin-left: 100px;
+}
+.icons2-div4{
+    margin-left: 106px;
+    margin-top: -12px;
+    font-size: 12px;
+    color: red;
+}
+.icons2-i-into-i {
+     transform: translatey(0px);
+    transition: 1s;
+}
+.icons2:has(.icons2-ii-into-ii:hover) .icons2-i-into-i {
+    transform: translatey(-4px);
+}
+.icons2 i:hover{
+    color: red;
+}
+.header3 {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.395);
+}
+.header3 p  {
+   float: left;
+   margin-left: 35%;
+   color: white;
+   margin-top: 5px;
+}
+.header3:has(a:hover)  p{
+    transform: translateX(-10px);
+}
+.header3 a{
+    float: left;
+    color: rgb(61, 61, 139);
+    margin-left: 5px;
+    text-decoration: underline;
+    text-decoration-color:rgb(61, 61, 139);
+    text-underline-offset: 4px ;
+    margin-top: 5px;
+}
+.header3 a:hover{
+  transform: scalex(1.2);
+}
+/*---------------------------------------------*/
+.div-for-background{
+   width: 100%;
+    height: 576px;
+    margin-top: 10px;
+}
+.background {
+    background: linear-gradient(to left , #01022de5 30% , #00000088), url(../img/9CZXSW.jpg);
+    width: 90%;
+    height: 576px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   margin: auto;
+}
+.texe1 {
+    position: relative;
+}
+.text1-p  {
+    position: absolute;
+    z-index: 3;
+    margin-top: -330px;
+    color: white;
+     margin-left: 100px;
+     font-size: 20px;
+}
+
+.text1-h2 {
+    position: absolute;
+    z-index: 3;
+    margin-top: -300px;
+    color: white;
+     margin-left: 100px;
+     font-size: 50px;
+}
+.text1-span  {
+    position: absolute;
+    z-index: 3;
+    margin-top: -230px;
+    color: white;
+     margin-left: 100px;
+}
+.text1-button {
+    position: absolute;
+    z-index: 3;
+    margin-top: -150px;
+    margin-left: 350px;
+    width: 80px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    color: black;
+    
+    opacity: 1;
+    transition: background-color 1s;
+}
+.text1-button:hover{
+    background-color: red;
+    color: yellow;
+    opacity: o.2;
+}
+/*-----------------------------------------------*/
+.Featured-Movies {
+   background-color: #241491a5;
+    margin: auto ;
+    margin-top: 100px;
+    width: 90%;
+    height: 750px;
+    background-position:center top;
+}
+.Featured-Movies .text2 {
+   text-align: center;
+   padding-top: 40px;
+   text-transform: uppercase;
+   word-spacing: 5px;
+}
+.text2 p{
+    padding-top: 20px;
+}
+.Featured-Movies-imgs{
+     padding-top: 50px;
+    display: flex;
+    perspective: 1000px;
+   
+}
+.Featured-Movies-imgs-div1 , .Featured-Movies-imgs-div2 , .Featured-Movies-imgs-div3{
+    width: 400px;
+    height: 530px;
+    background-color: gold;
+    position: relative;
+    margin-left: 28px;
+     overflow: hidden;
+     box-shadow: 12px 12px 20px  rgba(153, 205, 50, 0.548) ;
+}
+.img1 ,.img2 , .img3{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 550px;
+    transform: scale(1.2,1.2);
+    transition: transform 1s;
+}
+.Featured-Movies-imgs > div:not(:hover) img{
+    transform: scale(1,1);
+}
+
+.img1 {
+    background-image: linear-gradient(to bottom ,  #01022d7b 38% ,  #00000088 ) ;
+}
+.img2{
+    background-image:  linear-gradient(to bottom ,  #01022d7b 38% ,  #00000088  )  ;
+}
+.img3{
+     background-image:  linear-gradient(to bottom ,  #01022d7b 38% ,  #00000088 ) ;
+}
+.Featured-Movies-imgs-div1-text , .Featured-Movies-imgs-div2-text , .Featured-Movies-imgs-div1-text{
+    position: absolute;
+    margin-top:530px;
+    background-color: rgb(6, 6, 85);
+    width: 180%;
+     transition: transform 1s ;
+}
+.Featured-Movies-imgs-div2-text .h32{
+    margin-left: 170px;
+}
+.Featured-Movies-imgs-divs h3{
+    color: white;
+    margin-left: 150px;
+}
+.Featured-Movies-imgs-divs a{
+    color: white;
+    margin-left: 170px;
+    font-size: 14px;
+}
+.Featured-Movies-imgs > div:hover .Featured-Movies-imgs-divs{
+    transform: translateY(-40px);
+}
+/*----------------------------------*/
+.container-for-top-rated1{
+    margin-top: 100px;
+}
+.top-rated-h2 , .top-rated-ul{
+    float: left;
+    text-transform: capitalize;
+}
+.top-rated-h2  { 
+   padding-left: 40px;
+   text-transform: uppercase;
+} 
+.top-rated-ul  {
+    padding-left: 1140px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: -30px;
+}
+.top-rated-ul li{
+    display: inline-block;
+    margin-right: 19px;
+}
+.top-rated-ul-li{
+    border-bottom: 2px solid yellow;
+}
+.options {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.container-for-top-imgs{
+    width: 95%;
+    height: 600px;
+    background-color: #241491a5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container-for-top-imgs .i1{
+    position: absolute;
+    margin-top: 300px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.container-for-top-imgs .iii1{
+    margin-left: 15px;
+}
+.container-for-top-imgs .iii2{
+    margin-left: 1360px;
+}
+.container-for-top-imgs .backgroung {
+   width: 20%;
+   height:440px;
+   float: left;
+   margin-left: 55px;
+   margin-top: 80px;
+   background-size: cover;
+   background-position: center;
+}
+.container-for-top-imgs .backgroung4,
+.container-for-top-imgs .backgroung3,
+.container-for-top-imgs .backgroung2,
+.container-for-top-imgs .backgroung1 {
+   background-image: url(../img/OIP.jpeg) ;
+}
+.backgroung .parent{
+  width: 100%;
+   height:440px;
+   float: left;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   transform-style: preserve-3d;
+   transition: transform 1.3s 
+}
+.parent:hover {
+    transform: rotatey(180deg);
+}
+.backgroung .front {
+    width: 280px;
+    height:440px;
+   background-size: cover;
+   background-position: center;
+   z-index: 3;
+   position: absolute;
+   backface-visibility: hidden;
+   background-color: rgba(10, 2, 2, 0.077);
+}
+.backgroung .back {
+    width: 280px;
+    height:440px;
+    background-size: cover;
+   background-position: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotatey(180deg);
+}
+.backgroung .back1{
+    background-image:url(../img/the-pianist-movie-poster.webp);
+}
+.backgroung .back2{
+    background-image:url(../img/images.jpeg);
+     background-position: left; 
+}
+.backgroung .back3{
+   background-image:url(../img/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_.jpg);
+}
+.backgroung .back4{
+  background-image: url(../img/OIP.jpg);
+}
+.iicons{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(11, 11, 70);
+    padding-left:10px ;
+    padding-top: 6px;
+    margin-top: 410px;
+    opacity: 1;
+    transition: opacity 2s;
+    display: none;
+}
+.iicons i{
+    padding-left: 50px;
+}
+.iicons i:hover{
+    color: red;
+}
+.parent:hover .iicons {
+    display: block;   
+}
+.parent:not(:hover) .iicons {
+    display: block;   
+    opacity: 0;
+}
+/*-----------------------------------------------------------------*/
+.Movie-of-the-Week{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+     background-image: url(../img/9acbee61688769.5a76df4025557.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.parent-for-text{
+    width: 40opx;
+    height: 400px;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   text-transform: uppercase;
+   word-spacing: 5px;
+}
+.parent-for-text h2{
+    margin-top: 80px;
+}
+.parent-for-text-p1, .parent-for-text-p2 , .parent-for-text-p3, .parent-for-text-p4{
+    color: white;
+}
+.parent-for-text .p1{
+    margin-top: 40px;
+}
+.parent-for-text .p2{
+    margin-top: 40px;
+}
+.parent-for-text .p3 {
+    margin-top: 80px;
+}
+.Movie-of-the-Week i{
+    padding-top: 220px;
+    padding-left: 60px;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+.Movie-of-the-Week .ii2{
+    padding-left: 1300px;
+}
+/*-----------------------------------------------------------------*/
+.Movie-of-the-Week{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+     background-image: url(../img/9acbee61688769.5a76df4025557.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.parent-for-text{
+    width: 40opx;
+    height: 400px;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   text-transform: uppercase;
+   word-spacing: 5px;
+}
+.parent-for-text h2{
+    margin-top: 80px;
+}
+.parent-for-text-p1, .parent-for-text-p2 , .parent-for-text-p3, .parent-for-text-p4{
+    color: white;
+}
+.parent-for-text .p1{
+    margin-top: 40px;
+}
+.parent-for-text .p2{
+    margin-top: 40px;
+}
+.parent-for-text .p3 {
+    margin-top: 80px;
+}
+.Movie-of-the-Week i{
+    padding-top: 220px;
+    padding-left: 60px;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+.Movie-of-the-Week .ii2{
+    padding-left: 1300px;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+.you-may-like{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    margin-top: 70px;
+}
+.you-may-like-h2{
+   text-transform: uppercase;
+    text-align: center;
+}
+.parenttt {
+    background-color:  #241491a5;
+    width: 90%;
+    height: 700px;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.parenttt-div{
+    float: left;
+    margin-left: 3%;
+    width: 280px;
+    height:600px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid yellow;
+    position: relative;
+}
+.parenttt .div1 {
+    background-image: url(../img/images.jpg);
+    background-size: 389px;
+}
+.parenttt .div2 {
+  background-image:url(../img/emily-blunt-edge-of-tomorrow-2014-2JHM3AF.jpg);
+}
+.parenttt .dd1 {
+     background-image:url(../img/the-equalizer-3-poster.avif);
+}
+.parenttt .dd2 {
+      background-image: url(../img/479814-free-guy-0-600-0-900-crop.jpg);
+}
+.parenttt p {
+    float: left;
+    width: 280px;
+    height: 50px;
+    background-color:  #251491bd;
+    margin-left: 40px;
+    margin-top:10px ;
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.parenttt-div::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 0;
+   top: 0;
+   left: 0;
+   background-color: yellow;
+   opacity: 0.1;
+    transition: 1s;
+    pointer-events: none;
+}
+.parenttt-div:hover::after{
+  height: 100%;
+   opacity: 0.2;
+}
+.iconsss{
+    background-color:  #251491bd;
+    margin-top: 570px;
+}
+.parenttt-div .all-icons{
+    float: left;
+   display: none;
+   margin-right: 10px;
+   opacity: 1;
+   transition: opacity 1s;
+   cursor: pointer;
+}
+.parenttt-div .iiii{
+    margin-left: 100px;
+}
+.parenttt-div:hover  .all-icons{
+   display: block;
+}
+.parenttt-div:not(:hover)  .all-icons{
+   display: block;
+   opacity: 0;
+}
+.all-icons:hover{
+   color: red;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.latest-news{
+    width: 100%;
+    height: 750px;
+    margin-top: 100px;
+    position: relative;
+}
+.latest-news h2{
+    margin-left: 640px;
+    word-spacing: 12px;
+    text-transform: uppercase;
+}
+.parent-for-latest-news{
+    width: 95%;
+    height: 700px;
+    background-color:  #241491a5;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.parent-for-latest-news .divv{
+    margin-top: 70px;
+    width: 30%;
+    height:400px;
+    float: left;
+    margin-left:35px;
+    background-color: red;
+    overflow: hidden;
+}
+.divv img{
+    width: 100%;
+    height:400px;
+    transform: scale(1.2,1.2);
+    transition: transform  1s;
+}
+.divv:not(:hover) img{
+    transform: scale(1,1);
+}
+.parent-for-latest-news .texttt{
+    float: left;
+    margin-left: 35px;
+    margin-top: 50px;
+    width: 30%;
+    height:140px;
+    text-align: center;
+}
+.parent-for-latest-news .p1{
+    margin-top: 30px;
+    color: white;
+}
+.parent-for-latest-news .p2{
+    margin-top: 25px;
+    line-height: 19px;
+     color: white;
+}
+.parent-for-latest-news .a{
+    display: block;
+    margin-top: 11px;
+    text-underline-offset: 4px;
+    color: white;
+    transform: scale(1.2,1.2);
+    transition: transform  1s;
+}
+.parent-for-latest-news .aa{
+    margin-top: 30px;
+}
+.parent-for-latest-news .a:hover{
+    color: red;
+}
+.parent-for-latest-news .a:not(:hover){
+    transform: scale(1,1);
+}
+/*-------------------------------------*/
+.services {
+    margin-top: 130px;
+    width: 100%;
+    height: 200px;
+    background-color:  #241491a5;
+    display: grid;
+    grid-template-columns:repeat(4 , 1fr) ;
+     position: relative;
+}
+ .services-div i{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 180px;
+    font-size: 30px;
+}
+.services-div-i{
+    color:  rgba(0, 0, 255, 0.655);;
+    top: 50px;
+    transition: 0.2s;
+}
+.services-div:has(p:hover) .services-div-i{
+    transform: translatey(-50px);
+}
+.services-div p{
+   position: absolute;
+    margin-top: 110px;
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color:  #251491f1;
+    z-index: 3;
+}
+.services-div-p2 {
+    right: 81px;
+}
+/*--------------------------------------------*/
+.footer{
+    width: 100%;
+    height: 650px;
+   background-color: black;
+    display: grid;
+    grid-template-rows: 200px 400px ;
+}
+.footer-text{
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 140px;
+    float: left;
+}
+.footer-text-p1{
+    font-size: 20px;
+    color: white;
+}
+.footer-text-p2{
+    padding-top: 10px;
+    color: gray;
+}
+.footer input{
+    float: left;
+    margin-top: 80px;
+    margin-left:120px ;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+}
+.button button{
+    float: left;
+    margin-top: 80px;
+    margin-left:10px ;
+    padding: 5px;
+    background-color:  #2514916a;
+    color: white;
+    transform: scale(1,1);
+    transition: 1s;
+}
+.button button:hover{
+    transform: scale(1.2,1.2);
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 170px;
+}
+.footer-icons{
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+.footer-icons i{
+    padding-top: 5px;
+    margin-left: 20px;
+}
+.footer-icons i:hover{
+    color:red ;
+    grid-row: 2/2;
+    transform: scale(1.4,1.4);
+}
+.div-for-grid3{
+    display: grid;
+    grid-template-columns:repeat( 4, 1fr) ;
+    margin-top: 50px;
+}
+.for-grid2-logo{
+    height: 400px;
+}
+.for-grid2-logo i{
+    margin-left: 140px;
+    font-size: 30px;
+}
+.for-grid2-logo p{
+    display: inline;
+    font-size: 30px;
+}
+.div-for-grid3-span{
+    color: white;
+}
+.ulll{
+    list-style: none;
+    margin-top: 20px;
+}
+.div-for-grid3-li{
+    margin-top: 10px;
+}
+.div-for-grid3-li a{
+    display: block;
+    width: 100px ;
+    color: gray;
+   text-underline-offset: 4px ;
+   font-size: 12px;
+}
+.div-for-grid3-li a:hover{
+   transform: scale(1.2,1.2);
+}
+.line2{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+   margin-top: -90px;
+}
+.last-p p{
+    margin-left: 400px;
+    word-spacing: 5px;
+    color:white ;
+    margin-top: 50px;
+}
